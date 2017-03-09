@@ -22,6 +22,9 @@ module.exports = {
                 presets: ["react", "es2015"]
             }
         },{
+            "test": /\.scss$/,
+            "loaders": ["style", "css", "sass?sourceMap"]
+        },{
             test: /\.(jpg|png|svg)$/,
             loader: 'url-loader',
             options: {
